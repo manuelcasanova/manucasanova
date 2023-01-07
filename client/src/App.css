@@ -1,13 +1,129 @@
+:root {
+  --color0: black;
+  --color1: white;
+  --color2: #cfe0e8;
+  --color3: #87bdd8;
+  --color4: #d96459;
+  --color5: darkblue;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
   margin: 0.5rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-color: lightblue
+  background-color: var(--color0);
+  height: 95vh;
+}
+
+.title {
+  margin-top: 1em;
+  font-size: 4em;
+  font-weight: 500;
+  font-family: 'Josefin Slab', serif;
+  opacity: 0.6;
+  color: var(--color3);
+}
+
+.photo {
+  margin: 3em;
+  max-width: 10em;
+  text-align: center;
+  border-radius: 100%;
+  width: 35%;
+  opacity: 0.7;
+}
+
+.photo:hover {
+  opacity: 1;
+}
+
+.icon {}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block {
+  background-color: var(--color3);
+  margin: 0.5em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5em;
+  opacity: 0.7;
+  height: 1em;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.block:hover {
+  opacity: 2;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contact {
+  /* margin: 10% 30% 10% 30%; */
+  margin: 2.5em 40% 2.5em 40%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: xx-large;
+  opacity: 0.6;
+}
+
+.contact a:link {
+  color: var(--color3);
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: var(--color3);
+}
+
+.contact a:hover {
+  color: var(--color1);
+}
+
+.contact a:active {
+  color: var(--color3);
+}
+
+@media only screen and (min-width: 750px) {
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .title-name {
+    margin: 0 0.1em 0 0.1em;
+  }
+
+  .blocks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .block {
+    width: 25%;
+    height: 7em;
+  }
+
+  .icon {
+    margin: 10em 2em 0 2em;
+    cursor: pointer;
+  }
 }
