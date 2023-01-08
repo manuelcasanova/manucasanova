@@ -1,0 +1,636 @@
+:root {
+
+  --color6: grey;
+  --color7: #757575;
+
+}
+
+@media only screen and (max-width: 400px) {
+  .hide {
+    display: none;
+  }
+
+  .location-dot {
+    display: none;
+  }
+
+
+  /* .projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+
+  .project-component {
+    
+  }
+
+
+  .project-component-top {
+    
+  }
+
+  .--long {
+    /* word-wrap: break-word; */
+    font-size: 25px;
+  }
+
+  .--long2 {
+    /* word-wrap: break-word; */
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .location-no-dot {
+    display: none;
+  }
+}
+
+
+.App {
+  /* height: 100vh; */
+  min-width: 350px;
+  text-align: center;
+  color: var(--color7);
+  /* min-width: 500px; */
+  background-color: var(--color0);
+  padding-bottom: 20vh;
+}
+
+.app-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar-big {
+  display: none;
+}
+
+.navbar-small {
+  width: 100%;
+  background-color: var(--color0);
+  overflow: auto;
+}
+
+.navbar-small a {
+  float: left;
+  /* padding: 12px; */
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color7);
+  text-decoration: none;
+  font-size: 1em;
+  min-width: 16%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+}
+
+/* @media screen and (max-width: 350px) {
+  .navbar-small a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; 
+  }
+} */
+
+.navbar-small a:hover {
+  color: var(--color1);
+}
+
+.navbar-small a.active {
+  background-color: yellow;
+}
+
+/* .fa-github, .fa-linkedin-in {
+  color: var(--color1);
+}
+
+.fa-github:hover, .fa-linkedin-in:hover {
+  color: black
+} */
+
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+.header {
+  background-color: var(--color0);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Josefin Slab', serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h1:hover {
+  color: var(--color1);
+}
+
+h4 {
+  margin: 1em 0em 1em 0em;
+  font-size: 250%;
+}
+
+h4:hover {
+  color: var(--color1);
+}
+
+
+/* paragraph */
+p {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 3%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 2%;
+  text-indent: 0%;
+}
+
+.image-component {
+  background-color: var(--color0);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+
+}
+
+.image {
+  background-color: var(--color0);
+  text-align: center;
+  border-radius: 100%;
+  width: 35%;
+  opacity: 0.7;
+}
+
+.image:hover {
+  opacity: 1;
+}
+
+.social-component {
+  padding: 40px;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.fa-social {
+  color: var(--color7);
+  font-size: 250%;
+}
+
+.fa-social:hover {
+  color: var(--color1);
+}
+
+
+.about {
+  background-color: var(--color0);
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 10px;
+  font-size: 30px;
+  margin: 3%;
+  color: var(--color7);
+  padding-bottom: 30px;
+}
+
+h2:hover {
+  color: var(--color1);
+}
+
+hr {
+  width: 200px;
+  margin-left: 10px;
+  color: var(--color7);
+  background-color: var(--color7);
+}
+
+.skills {
+  background-color: var(--color0);
+  text-align: justify;
+}
+
+.projects {
+  background-color: var(--color0);
+  text-align: justify;
+  margin-top: 10%;
+}
+
+.project-component {
+  background-color: var(--color0);
+  text-align: left;
+  font-family: 'Montserrat', serif;
+  font-size: 20px;
+  line-height: 2;
+  margin: 3%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding-right: 2%;
+}
+
+.project-component-top {
+  display: flex;
+  align-content: center;
+}
+
+.project-name {
+  margin-right: 5%;
+  font-size: xx-large;
+  font-weight: 900;
+  color: var(--color6);
+}
+
+.project-name a {
+  text-decoration: none;
+  color: var(--color6);
+}
+
+.project-name a:hover {
+  color: var(--color1);
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.github-link {
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.video-link {
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.github-link a:link,
+.video-link a:link {
+  color: var(--color6);
+  text-decoration: none;
+}
+
+.github-link a:visited,
+.video-link a:visited {
+  color: var(--color6);
+}
+
+.github-link a:hover,
+.video-link a:hover {
+  color: var(--color6);
+}
+
+.github-link a:active,
+.video-link a:active {
+  color: var(--color6);
+}
+
+.project-details {
+  font-size: 90%;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.contact-original {
+  margin-top: 5%;
+  background-color: var(--color0);
+  text-align: justify;
+}
+
+.fa-solid,
+.fa-projects {
+  margin-top: 3%;
+  padding-right: 5%;
+  font-size: x-large;
+  color: var(--color6);
+}
+
+.fa-projects:hover,
+.fa-solid:hover {
+  color: var(--color1);
+}
+
+.fa-envelope {
+  cursor: pointer;
+}
+
+.email-address {
+  cursor: pointer;
+}
+
+.contact-original a:link {
+  color: var(--color6);
+  text-decoration: none;
+}
+
+.contact-original a:visited {
+  color: var(--color6);
+}
+
+.contact-original a:hover {
+  color: var(--color1);
+}
+
+.contact-original a:active {
+  color: var(--color6);
+}
+
+.footer {
+  background-color: var(--color0);
+  padding: 6em 1em 0em 1em;
+  font-size: x-large;
+  font-family: 'Montserrat', serif;
+  /* position: fixed;
+  bottom: 0;
+  width: 100%; */
+}
+
+.full-horizontal {
+  margin: 0%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+  h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .app-body {
+    flex-direction: row;
+
+  }
+
+  .app-main {
+    flex-direction: column;
+    margin-left: 120px;
+    padding-left: 5%;
+  }
+
+  .navbar-small {
+    display: none;
+  }
+
+  .navbar {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--color0);
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .navbar a {
+    float: left;
+    padding: 0px;
+    color: var(--color6);
+    text-decoration: none;
+    font-size: 22px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a:hover {
+    /* background-color: var(--color7);
+    color: black */
+    color: var(--color1);
+  }
+
+  .navbar a.active {
+    background-color: var(--color6);
+  }
+
+  .image {
+    background-color: var(--color0);
+    text-align: center;
+    border-radius: 100%;
+    width: 20%;
+    opacity: 0.8;
+  }
+
+  .about {}
+
+  .skills {
+    margin-top: 5%
+  }
+
+  .projects {
+    margin-top: 5%
+  }
+
+  .project-component {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+
+  /* 
+  .project-component {
+    background-color: var(--color1);
+    text-align: justify;
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    line-height: 2;
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding-right: 2%;
+  } */
+
+
+  .project-details {
+    font-size: 23px;
+  }
+
+  .project-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 3%;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 2%;
+    text-indent: 0%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+  .navbar-small {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  navbar a .navbar-skills {
+    display: hide;
+  }
+
+  .navbar-big {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--color0);
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .navbar-big a {
+    float: left;
+    padding: 0px;
+    color: var(--color6);
+    text-decoration: none;
+    font-size: 22px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-big a:hover {
+    /* background-color: var(--color7);
+    color: black */
+    color: var(--color1);
+  }
+
+  .navbar-big a.active {
+    background-color: var(--color6);
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .about-skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .skills {
+    margin-top: 0%;
+  }
+
+
+  /* .projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+
+
+  .project-component {
+    background-color: var(--color0);
+    text-align: justify;
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    line-height: 2;
+    margin: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-right: 2%;
+    margin-left: 10px;
+  }
+
+  .project-details {
+    font-size: 25px;
+  }
+
+  .project-component-top {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .github-link,
+  .video-link {
+    margin-right: 20%;
+  }
+
+  .project-name {
+    margin-right: 5%;
+    font-size: xx-large;
+
+  }
+
+}
