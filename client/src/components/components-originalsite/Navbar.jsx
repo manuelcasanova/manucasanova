@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Navbar() {
 
   // Get the container element
@@ -33,8 +35,8 @@ export default function Navbar() {
 
       <div id="navbar" className="navbar-small" >
         {/* <a className="active" href="#">Home</a> */}
-        <a className="btn" href="https://www.manucasanova.com">MC</a>
-        <a href="#">Home</a>
+        <Link to="/" className='btn'>Home</Link>
+        {/* <a href="#" className='red'>Home</a> */}
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -47,7 +49,7 @@ export default function Navbar() {
       <div id="navbar" className="navbar" >
 
         {/* <a className="btn active" href="#home">Home</a> */}
-        <a className="btn" href="https://www.manucasanova.com">MC</a>
+        <Link to="/" className='btn'>MC</Link>
         <a className="btn" href="#home">Home</a>
         <a className="btn" href="#about">About</a>
         <a className="btn"
@@ -65,7 +67,7 @@ export default function Navbar() {
       <div id="navbar" className="navbar-big" >
 
         {/* <a className="btn active" href="#home">Home</a> */}
-        <a className="btn" href="https://www.manucasanova.com">MC</a>
+        <Link to="/" className='btn'>MC</Link>
         <a className="btn" href="#home">Home</a>
         <a className="btn" href="#about">About</a>
         <a className="btn"

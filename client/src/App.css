@@ -21,6 +21,14 @@ body {
   height: 95vh;
 }
 
+.no-decoration {
+  text-decoration: none;
+}
+
+.no-decoration :active {
+  color: var(--color3);
+}
+
 .title {
   margin-top: 1em;
   font-size: 4em;
@@ -28,6 +36,10 @@ body {
   font-family: 'Josefin Slab', serif;
   opacity: 0.6;
   color: var(--color3);
+}
+
+.title-name {
+  font-weight: 900;
 }
 
 .photo {
@@ -51,6 +63,12 @@ body {
 
 .block a:link {
   text-decoration: none;
+  color: var(--color0);
+}
+
+link {
+  text-decoration: none;
+  color: var(--color0);
 }
 
 .block a:visited {
@@ -70,6 +88,16 @@ body {
   height: 1em;
   width: 80%;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+.title {
+  font-size: 3em;
+}
+
+.block {
+font-size: 1em;
+}
 }
 
 .block:hover {
@@ -101,7 +129,7 @@ body {
 }
 
 .contact a:link {
-  color: var(--color3);
+  /* color: var(--color3); */
   text-decoration: none;
 }
 
@@ -116,6 +144,8 @@ body {
 .contact a:active {
   color: var(--color3);
 }
+
+
 
 @media only screen and (min-width: 750px) {
 
