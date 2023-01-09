@@ -29,6 +29,7 @@ body {
 .no-line {
   text-decoration: none;
   color: black;
+
 }
 
 .no-decoration :active {
@@ -108,6 +109,7 @@ link {
 
 .block {
 font-size: 1em;
+padding: 2em;
 }
 }
 
@@ -209,6 +211,18 @@ list-style-type: none;
   color: var(--color3);
 }
 
+.no-line {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+.block {
+
+  padding: 2em;
+  width: 100%;
+  }
+}
 
 
 @media only screen and (min-width: 750px) {
@@ -229,9 +243,11 @@ list-style-type: none;
     flex-direction: row;
   }
 
+
   .block {
     /* width: 25%; */
     height: 7em;
+
   }
 
   .icon {
