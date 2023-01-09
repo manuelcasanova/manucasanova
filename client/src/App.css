@@ -162,6 +162,10 @@ font-weight: 600;
 list-style-type: none;
 }
 
+.margin-top-2 {
+  margin-top: 2.5em;
+}
+
 .li-title:not(:first-child) {
   margin-top: 1em;
 }
