@@ -5,7 +5,7 @@ import Casanovaspanish from "./projects/Casanovaspanish";
 
 export default function Projects() {
   return (
-    <div className="projects" >
+    <div className="projects" id="projects">
 
       <h2 className="section-title">Projects</h2>
       <div className="projects-grid">
