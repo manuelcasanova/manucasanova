@@ -48,6 +48,11 @@ export default function Hospitality() {
               <div>Junior Assistant Manager</div>
             </li>
             <li>
+              <div className="li-title">2004</div>
+              <div>Best Hotels Mojácar (Mojácar, Spain)</div>
+              <div>Junior Assistant Manager - Intern</div>
+            </li>
+            <li>
               <div className="li-title">2001 - 2004</div>
               <div>Hotel Gran Sol (Barcelona, Spain)</div>
               <div>Hotel-school student</div>

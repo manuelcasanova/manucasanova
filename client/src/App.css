@@ -22,11 +22,22 @@ body {
 }
 
 .no-decoration {
+  /* text-decoration: none; */
+  color: black;
+}
+
+.no-line {
   text-decoration: none;
+  color: black;
 }
 
 .no-decoration :active {
   color: var(--color3);
+  cursor: pointer;
+}
+
+.no-decoration :visited {
+  color: var(--color0)
 }
 
 .title {
@@ -219,7 +230,7 @@ list-style-type: none;
   }
 
   .block {
-    width: 25%;
+    /* width: 25%; */
     height: 7em;
   }
 

@@ -15,24 +15,42 @@ export default function Home() {
         <img className="photo" src={image} alt='Manuel' />
       </div>
       <div className="blocks">
-        <div className="block">
 
 
-          {/* <a href="https://www.manucasanova.com/hospitality" rel="noreferrer" target="_blank">
+
+        {/* <a href="https://www.manucasanova.com/hospitality" rel="noreferrer" target="_blank">
           ...in the Hospitality Industry
           </a> */}
 
-          <Link to="/hospitality" className='link'>...in the Hospitality Industry</Link>
+        <Link to="/hospitality" className='link no-line'>
+          <div className="block">
+            ...in the Hospitality Industry
+          </div>
+        </Link>
 
-        </div>
+
         {/* <div className="block"><a href="https://www.manucasanova.com/developer" rel="noreferrer" target="_blank">...as a Web Developer</a></div> */}
 
-        <div className="block">
-        <Link to="/developer" className='link'>...as a Web Developer</Link>
+
+        <Link to="/developer" className='link no-line'>
+          <div className="block">
+            ...as a Web Developer
+          </div>
+        </Link>
+
+
+
+        {/* <div className="block"><a href="https://www.casanovaspanish.com" rel="noreferrer" target="_blank">...as a Spanish Teacher</a></div> */}
+        <div >
+
+          <Link to="/spanish" className='link no-line'>
+            <div className="block">
+              ...as a Spanish Teacher
+            </div>
+          </Link>
 
         </div>
 
-        <div className="block"><a href="https://www.casanovaspanish.com" rel="noreferrer" target="_blank">...as a Spanish Teacher</a></div>
       </div>
       <div className="contact">
 
