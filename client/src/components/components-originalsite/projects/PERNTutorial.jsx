@@ -15,7 +15,7 @@ export default function PERNTutorial() {
           </div>
 
           <div className="video-link">
-            <a href="https://www.youtube.com/watch?v=28bl5BkKrTs&t=1s&ab_channel=ManuelCasanova" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
+            <a href="https://www.manucasanova.com/videos/movies.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
           </div>
 
           <div className="video-link">

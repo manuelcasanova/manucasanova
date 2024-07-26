@@ -93,7 +93,7 @@ export default function Hospitality() {
             <li>Hotel-link</li>
             <li>ACI Hotel</li>
             <li>New Hotel</li>
-            <li>NH Hoteld system</li>
+            <li>NH Hotels system</li>
             <li>Innsist</li>
             <li>Web development: HTML, CSS, ReactJS, NodeJS, ExpressJS, PostgreSQL</li>
 
@@ -121,7 +121,7 @@ export default function Hospitality() {
 
             <li>
               <div className="li-title">2001 - 2004</div>
-              <div>Tourist and hotel management college diploma</div>
+              <div>Tourism and hotel management college diploma</div>
               <div>EUHT StPol - University of Girona (Barcelona, Spain)</div>
             </li>
             <li className="margin-top-2">Business organisation and management</li>

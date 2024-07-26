@@ -4,6 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 export default function Home() {
 
   const navigate = useNavigate()
+  const resume = "https://www.manucasanova.com/resume2.pdf"
 
   return (
     <>
@@ -55,9 +56,14 @@ export default function Home() {
       <div className="contact">
 
 
-        <a href="mailto:manucasanova@hotmail.com"><i className="fa-solid fa-envelope" /></a>
+        <a href="mailto:manucasanova@hotmail.com"><i className="fa-solid fa-envelope" />
         <a href="mailto:manucasanova@hotmail.com?subject=Hello Manuel!"></a>
+        </a>
+        
 
+        <div className="resume">
+      <a title="resume" id="a-resume" href={resume} target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i></a>
+    </div>
 
         <a href="https://www.linkedin.com/in/manuel-casanova/" rel="noreferrer" target="_blank"><i className="fa-solid fa-brands fa-linkedin-in"></i></a>
 

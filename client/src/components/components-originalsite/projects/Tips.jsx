@@ -1,23 +1,21 @@
-export default function Steps() {
+export default function Tios() {
   return (
     <div className="project-component">
 
       <div className="project-component-top">
 
-        <div className="project-name">
-          <a>Steps!</a>
+      <div className="project-name">
+          <a>Tips!</a>
         </div>
 
         <div className="project-links">
 
           <div className="video-link">
-            <a href="https://www.casinosteps.ca/videos/steps.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
+            <a href="https://www.tips.manucasanova.com/tips.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
           </div>
 
-          {/* Google drive: https://drive.google.com/file/d/1hyHMkWUplRda-CcIPFk16_h8Pc_D-RoX/view?usp=sharing */}
-
           <div className="video-link">
-            <a href="https://www.casinosteps.ca" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
+            <a href="https://www.tips.manucasanova.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
           </div>
 
         </div>
@@ -30,7 +28,7 @@ export default function Steps() {
 
       <div className="project-details">
         <div className="project-description">
-          Application that allows dance students to watch videos of the steps learned in class. The administrator can add, edit, update and delete users and steps.
+          Application that helps restaurant managers and supervisors to manage cash register closures and tip distributions.
         </div>
         <div className="project-front-end">Front-End: <b>ReactJs, CSS.</b></div>
         <div className="project-back-end">Back-End: <b>NodeJs, Express, PostgreSQL.</b></div>

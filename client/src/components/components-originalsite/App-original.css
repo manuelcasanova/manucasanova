@@ -5,6 +5,18 @@
 
 }
 
+
+.li-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link-space {
+  margin-left: 1em;
+}
+
+
 @media only screen and (max-width: 400px) {
   .hide {
     display: none;
@@ -26,6 +38,7 @@
   .project-component {
     
   }
+
 
 
   .project-component-top {

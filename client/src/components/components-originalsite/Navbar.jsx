@@ -49,8 +49,8 @@ export default function Navbar() {
       <div id="navbar" className="navbar" >
 
         {/* <a className="btn active" href="#home">Home</a> */}
-        <Link to="/" className='btn'>MC</Link>
-        <a className="btn" href="#home">Home</a>
+        <Link to="/" className='btn'>Home</Link>
+        {/* <a className="btn" href="#home">Home</a> */}
         <a className="btn" href="#about">About</a>
         <a className="btn"
           // navbar-skills" 
@@ -67,8 +67,8 @@ export default function Navbar() {
       <div id="navbar" className="navbar-big" >
 
         {/* <a className="btn active" href="#home">Home</a> */}
-        <Link to="/" className='btn'>MC</Link>
-        <a className="btn" href="#home">Home</a>
+        <Link to="/" className='btn'>Home</Link>
+        {/* <a className="btn" href="#home">Home</a> */}
         <a className="btn" href="#about">About</a>
         <a className="btn"
           // navbar-skills" 

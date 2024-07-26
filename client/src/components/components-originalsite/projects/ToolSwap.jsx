@@ -15,12 +15,12 @@ export default function ToolSwap() {
           </div>
 
           <div className="video-link">
-            <a href="https://youtu.be/ClXft7p0MMA" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
+            <a href="https://www.manucasanova.com/videos/toolswap.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
           </div>
 
-          <div className="video-link">
+          {/* <div className="video-link">
             <a href="https://toolswap.netlify.app/" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
-          </div>
+          </div> */}
 
         </div>
 

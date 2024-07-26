@@ -28,7 +28,7 @@ export default function Tweeter() {
         <div className="project-description">
           A single-page Twitter clone.
         </div>
-        <div className="project-front-end">Front-End: <b>HTML, CSS, Javascript.</b></div>
+        <div className="project-front-end">Front-End: <b>HTML, CSS, JavaScript.</b></div>
         <div className="project-back-end">Back-End: <b>NodeJs, Express, jQuery, Ajax.</b></div>
         <div className="project-testing">Testing: <b>Mocha, Chai.</b></div>
       </div>
