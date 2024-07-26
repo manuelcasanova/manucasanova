@@ -37,6 +37,11 @@ body {
   text-align: justify;
 }
 
+.project-line {
+  margin-top: 1em;
+  display: flex;
+}
+
 .no-decoration {
   /* text-decoration: none; */
   color: black;

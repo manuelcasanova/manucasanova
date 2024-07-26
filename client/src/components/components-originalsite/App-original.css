@@ -16,6 +16,10 @@
   margin-left: 1em;
 }
 
+.link-space:first-child {
+  margin-left: 0em;
+}
+
 
 @media only screen and (max-width: 400px) {
   .hide {

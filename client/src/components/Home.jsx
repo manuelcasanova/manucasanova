@@ -1,7 +1,15 @@
 import image from '../manuel.png';
 import { useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [showMore, setShowMore] = useState(false)
+
+  const handleShowMore = () => {
+    setShowMore(prev => !prev);
+  };
+
 
   const navigate = useNavigate()
   const resume = "https://www.manucasanova.com/resume2.pdf"
@@ -24,7 +32,9 @@ export default function Home() {
           </div>
         </Link>
 
-
+        <div className="link-space">
+                <a onClick={handleShowMore}><i className="fa-projects fa-brands fa-plus"></i></a>
+              </div>
 
         {/* <a href="https://www.manucasanova.com/hospitality" rel="noreferrer" target="_blank">
           ...in the Hospitality Industry

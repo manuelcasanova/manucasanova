@@ -3,31 +3,31 @@ import { useState } from "react"
 
 export default function Developer() {
 
-const [showRwithme, setShowRwithme] = useState(false)
-const [showSteps, setShowSteps] = useState(false)
-const [showTips, setShowTips] = useState(false)
-const [showPern, setShowPern] = useState(false)
-const [showCasanova, setShowCasanova] = useState(false)
+  const [showRwithme, setShowRwithme] = useState(false)
+  const [showSteps, setShowSteps] = useState(false)
+  const [showTips, setShowTips] = useState(false)
+  const [showPern, setShowPern] = useState(false)
+  const [showCasanova, setShowCasanova] = useState(false)
 
-const handleShowRWithMe = () => {
-  setShowRwithme(prev => !prev);
-};
+  const handleShowRWithMe = () => {
+    setShowRwithme(prev => !prev);
+  };
 
-const handleShowSteps = () => {
-  setShowSteps(prev => !prev);
-};
+  const handleShowSteps = () => {
+    setShowSteps(prev => !prev);
+  };
 
-const handleShowTips = () => {
-  setShowTips(prev => !prev);
-};
+  const handleShowTips = () => {
+    setShowTips(prev => !prev);
+  };
 
-const handleShowPern = () => {
-  setShowPern(prev => !prev);
-};
+  const handleShowPern = () => {
+    setShowPern(prev => !prev);
+  };
 
-const handleShowCasanova = () => {
-  setShowCasanova(prev => !prev);
-};
+  const handleShowCasanova = () => {
+    setShowCasanova(prev => !prev);
+  };
 
   return (
     <div className="hospitality">
@@ -57,8 +57,8 @@ const handleShowCasanova = () => {
               </div>
             </li>
 
-{showRwithme &&
-            <div className="cursive">RWITHME is a social media platform designed specifically for cycling and running enthusiasts. It allows users to discover and share maps and routes, join planned rides and runs, and create their own routes to share with the community. The app also supports interactive features, such as engaging in conversations within specific rides or runs, exchanging private messages, and following other users. It’s a hub for connecting with fellow athletes.</div>}
+            {showRwithme &&
+              <div className="cursive">RWITHME is a social media platform designed specifically for cycling and running enthusiasts. It allows users to discover and share maps and routes, join planned rides and runs, and create their own routes to share with the community. The app also supports interactive features, such as engaging in conversations within specific rides or runs, exchanging private messages, and following other users. It’s a hub for connecting with fellow athletes.</div>}
 
             <li className="li-line">
 
@@ -78,7 +78,7 @@ const handleShowCasanova = () => {
             </li>
 
             {showSteps &&
-            <div className="cursive">Steps! is an app tailored for students of Casino, the Cuban dance also known as Cuban salsa. It provides a resource for learners to view instructional videos of the dance steps taught in class and hear the pronunciation of each step's name. Administrators can upload new steps and manage access, ensuring students can only view content relevant to their current level. This app supports a structured learning experience while making dance instruction accessible and engaging.</div>}
+              <div className="cursive">Steps! is an app tailored for students of Casino, the Cuban dance also known as Cuban salsa. It provides a resource for learners to view instructional videos of the dance steps taught in class and hear the pronunciation of each step's name. Administrators can upload new steps and manage access, ensuring students can only view content relevant to their current level. This app supports a structured learning experience while making dance instruction accessible and engaging.</div>}
 
             <li className="li-line">
 
@@ -98,7 +98,7 @@ const handleShowCasanova = () => {
             </li>
 
             {showTips &&
-            <div className="cursive">Tips! is a specialized calculator designed for restaurant managers and supervisors to streamline tip distribution among team members. The app calculates how tips should be shared based on various factors, including hours worked, different packages and menus, and roles (such as servers or server support). It simplifies the process of ensuring fair and accurate tip distribution, tailored to the specific needs of the restaurant.</div>}
+              <div className="cursive">Tips! is a specialized calculator designed for restaurant managers and supervisors to streamline tip distribution among team members. The app calculates how tips should be shared based on various factors, including hours worked, different packages and menus, and roles (such as servers or server support). It simplifies the process of ensuring fair and accurate tip distribution, tailored to the specific needs of the restaurant.</div>}
 
 
             <li className="li-line">
@@ -119,7 +119,7 @@ const handleShowCasanova = () => {
             </li>
 
             {showPern &&
-            <div className="cursive">This article is a tutorial to create a simple CRUD application with the PERN stack (PostgreSQL, Express, React, Node).</div>}
+              <div className="cursive">This article is a tutorial to create a simple CRUD application with the PERN stack (PostgreSQL, Express, React, Node).</div>}
 
 
             <li className="li-line">
@@ -137,12 +137,50 @@ const handleShowCasanova = () => {
 
 
             {showCasanova &&
-            <div className="cursive">Website for an online Spanish tutor.</div>}
+              <div className="cursive">Website for an online Spanish tutor.</div>}
 
           </ul>
         </div>
       </div>
 
+
+      <div className="hospitality-section">
+        <div className="hospitality-section-title">Experience and projects</div>
+        <div className="list">
+          <ul>
+
+
+            <div className="li-title">2022 - present</div>
+            <li>Full Stack Web Developer</li>
+
+
+            <div className="li-title">Projects</div>
+
+<div className="project-line">
+
+            <div className="link-space">
+              RWITHME
+            </div>
+
+            <div className="link-space">
+              <a onClick={handleShowRWithMe}><i className="fa-projects fa-brands fa-plus"></i></a>
+            </div>
+
+            <div className="link-space">
+              <a href="https://www.rwithme.com/rwithme.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div className="link-space">
+              <a href="https://www.rwithme.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
+            </div>
+
+            </div>
+
+
+          </ul>
+        </div>
+
+      </div>
 
 
       <div className="hospitality-section">
@@ -188,7 +226,7 @@ const handleShowCasanova = () => {
 
             <div className="li-title">Degrees</div>
             <li>Full Stack Web Development Diploma - 2022</li>
- 
+
 
 
 
@@ -201,8 +239,8 @@ const handleShowCasanova = () => {
             <li>React</li>
             <li>Automated Testing in React</li>
             <li>Ruby on Rails</li>
-     
-   
+
+
 
 
           </ul>
