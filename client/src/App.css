@@ -21,6 +21,13 @@ body {
   height: 95vh;
 }
 
+.cursive {
+  font-style: italic;
+  font-size: smaller;
+  display: flex;
+  text-align: justify;
+}
+
 .no-decoration {
   /* text-decoration: none; */
   color: black;
