@@ -155,7 +155,7 @@ const handleShowCasanova = () => {
             <li>JavaScript</li>
             <li>React JS</li>
             <li>Express JS</li>
-            <li>Node Js</li>
+            <li>Node JS</li>
             <li>PostgreSQL</li>
 
 

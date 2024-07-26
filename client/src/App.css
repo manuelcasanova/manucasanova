@@ -19,6 +19,11 @@ body {
   text-align: center;
   background-color: var(--color0);
   height: 95vh;
+  
+}
+
+.bold {
+  font-weight: 900;
 }
 
 .cursive {
@@ -194,6 +199,7 @@ list-style-type: none;
 .contact {
   /* margin: 10% 30% 10% 30%; */
   margin: 2.5em 40% 2.5em 40%;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -247,7 +253,7 @@ list-style-type: none;
   .blocks {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
   }
 
 

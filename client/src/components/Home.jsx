@@ -15,7 +15,14 @@ export default function Home() {
       <div>
         <img className="photo" src={image} alt='Manuel' />
       </div>
+
       <div className="blocks">
+
+      <Link to="/developer" className='link no-line'>
+          <div className="block bold">
+            ...as a Web Developer
+          </div>
+        </Link>
 
 
 
@@ -33,11 +40,6 @@ export default function Home() {
         {/* <div className="block"><a href="https://www.manucasanova.com/developer" rel="noreferrer" target="_blank">...as a Web Developer</a></div> */}
 
 
-        <Link to="/developer" className='link no-line'>
-          <div className="block">
-            ...as a Web Developer
-          </div>
-        </Link>
 
 
 
