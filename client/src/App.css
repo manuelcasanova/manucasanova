@@ -22,6 +22,10 @@ body {
   
 }
 
+.fa-plus {
+  cursor: pointer;
+}
+
 .bold {
   font-weight: 900;
 }

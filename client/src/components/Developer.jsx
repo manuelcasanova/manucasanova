@@ -157,7 +157,9 @@ const handleShowCasanova = () => {
             <li>Express JS</li>
             <li>Node JS</li>
             <li>PostgreSQL</li>
-
+            <li>Full-Stack Applications Deployment</li>
+            <li>cPanel Hosting Management</li>
+            <li>Web hosting management: Domain management, SSL certificate installation, server configuration</li>
 
 
             <div className="li-title">Informatics</div>
