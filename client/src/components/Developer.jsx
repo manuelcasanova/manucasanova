@@ -140,9 +140,7 @@ export default function Developer() {
                       <a onClick={handleShowPern}><i className="fa-solid fa-minus"></i></a>
                     </div>
                   }
-            <div className="link-space">
-                <a href="https://www.manucasanova.com/videos/movies.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
-              </div>
+
 
               <div className="link-space">
                 <a href="https://medium.com/@manuelcasanovafernandez/a-pern-stack-crud-application-tutorial-e8676582c708" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>

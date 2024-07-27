@@ -1,5 +1,6 @@
 
 import './App.css';
+import ScrollToTop from './ScrollToTop.js';
 import Home from './components/Home';
 import Body from './components/components-originalsite/Body.jsx' 
 import Hospitality from './components/Hospitality';
@@ -12,7 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-   
+   <ScrollToTop />
       <Routes>
       <Route exact path="/" element={<Home/>}></Route>
       <Route exact path="/developer" element={<Developer/>}></Route>
