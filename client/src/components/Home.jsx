@@ -1,6 +1,6 @@
 import image from '../manuel.png';
 import { useNavigate, Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 export default function Home() {
 
@@ -26,56 +26,59 @@ export default function Home() {
 
       <div className="blocks">
 
-      <Link to="/developer" className='link no-line'>
+        <Link to="/developer" className='link no-line'>
           <div className="block bold">
             ...as a Web Developer
           </div>
         </Link>
 
+{!showMore && 
         <div className="link-space">
-                <a onClick={handleShowMore}><i className="fa-projects fa-brands fa-plus"></i></a>
-              </div>
-
-        {/* <a href="https://www.manucasanova.com/hospitality" rel="noreferrer" target="_blank">
-          ...in the Hospitality Industry
-          </a> */}
-
-        <Link to="/hospitality" className='link no-line'>
-          <div className="block">
-            ...in the Hospitality Industry
-          </div>
-        </Link>
-
-
-        {/* <div className="block"><a href="https://www.manucasanova.com/developer" rel="noreferrer" target="_blank">...as a Web Developer</a></div> */}
-
-
-
-
-
-        {/* <div className="block"><a href="https://www.casanovaspanish.com" rel="noreferrer" target="_blank">...as a Spanish Teacher</a></div> */}
-        <div >
-
-          <Link to="/spanish" className='link no-line'>
-            <div className="block">
-              ...as a Spanish Teacher
-            </div>
-          </Link>
-
+          <a onClick={handleShowMore}><i className="fa-projects fa-brands fa-plus"></i></a>
         </div>
+        }
 
-      </div>
+{showMore && 
+        <div className="link-space">
+          <a onClick={handleShowMore}><i className="fa-solid fa-minus"></i></a>
+        </div>
+        }
+
+        {showMore && 
+ 
+          <div className='blocks-bottom'>
+
+            <Link to="/hospitality" className='link no-line'>
+              <div className="block">
+                ...in the Hospitality Industry
+              </div>
+            </Link>
+
+
+            <Link to="/spanish" className='link no-line'>
+              <div className="block">
+                ...as a Spanish Teacher
+              </div>
+            </Link>
+
+          </div>
+          
+}
+
+    </div >
+
+
       <div className="contact">
 
 
         <a href="mailto:manucasanova@hotmail.com"><i className="fa-solid fa-envelope" />
-        <a href="mailto:manucasanova@hotmail.com?subject=Hello Manuel!"></a>
+          <a href="mailto:manucasanova@hotmail.com?subject=Hello Manuel!"></a>
         </a>
-        
+
 
         <div className="resume">
-      <a title="resume" id="a-resume" href={resume} target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i></a>
-    </div>
+          <a title="resume" id="a-resume" href={resume} target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i></a>
+        </div>
 
         <a href="https://www.linkedin.com/in/manuel-casanova/" rel="noreferrer" target="_blank"><i className="fa-solid fa-brands fa-linkedin-in"></i></a>
 

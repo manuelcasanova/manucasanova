@@ -19,7 +19,10 @@ body {
   text-align: center;
   background-color: var(--color0);
   height: 95vh;
-  
+}
+
+.hospitality {
+  padding: 1em 0em 1em 0em;
 }
 
 .fa-plus {
@@ -35,6 +38,7 @@ body {
   font-size: smaller;
   display: flex;
   text-align: justify;
+  padding: 0.5em;
 }
 
 .project-line {
@@ -132,6 +136,18 @@ link {
 font-size: 1em;
 padding: 2em;
 }
+
+.project-name-and-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+
 }
 
 .block:hover {
@@ -177,6 +193,15 @@ padding: 2em;
   display: inline-block;
   text-align: left;
   
+}
+
+.project-name-and-icons {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -257,6 +282,10 @@ list-style-type: none;
 
   .title-name {
     margin: 0 0.1em 0 0.1em;
+  }
+
+  .blocks-bottom {
+    display: flex;
   }
 
   .blocks {
