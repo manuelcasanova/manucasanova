@@ -31,131 +31,123 @@ export default function Developer() {
 
   return (
     <div className="hospitality">
-      <div className="hospitality-section">
-        <div className="hospitality-section-title">Experience and Projects</div>
+
+
+
+      < div className="hospitality-section" >
+        <div className="hospitality-section-title">Experience and projects</div>
         <div className="list">
           <ul>
+
+
             <div className="li-title">2022 - present</div>
-            <li className="li-line">
-              <li>Full Stack Web Developer</li>
-            </li>
+            <li>Full Stack Web Developer</li>
             <div className="li-title">Projects</div>
 
             <li className="li-line">
               <div className="project-name-and-icons">
-
-
                 <li>RWITHME</li>
-
                 <div className="icons">
-
                   {!showRwithme &&
                     <div className="link-space">
                       <a onClick={handleShowRWithMe}><i className="fa-projects fa-brands fa-plus"></i></a>
                     </div>
                   }
-
                   {showRwithme &&
                     <div className="link-space">
                       <a onClick={handleShowRWithMe}><i className="fa-solid fa-minus"></i></a>
                     </div>
                   }
-
                   <div className="link-space">
                     <a href="https://www.rwithme.com/rwithme.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
                   </div>
-
                   <div className="link-space">
                     <a href="https://www.rwithme.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
                   </div>
                 </div>
               </div>
-
             </li>
-
-
 
             {showRwithme &&
               <div className="cursive">RWITHME is a social media platform designed specifically for cycling and running enthusiasts. It allows users to discover and share maps and routes, join planned rides and runs, and create their own routes to share with the community. The app also supports interactive features, such as engaging in conversations within specific rides or runs, exchanging private messages, and following other users. It’s a hub for connecting with fellow athletes.</div>}
 
-            <li className="li-line">
-
-              <li>Steps!</li>
-              {!showSteps &&
-                <div className="link-space">
-                  <a onClick={handleShowSteps}><i className="fa-projects fa-brands fa-plus"></i></a>
+<li className="li-line">
+              <div className="project-name-and-icons">
+                <li>Steps!</li>
+                <div className="icons">
+                  {!showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowSteps}><i className="fa-projects fa-brands fa-plus"></i></a>
+                    </div>
+                  }
+                  {showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowSteps}><i className="fa-solid fa-minus"></i></a>
+                    </div>
+                  }
+                  <div className="link-space">
+                    <a href="https://www.casinosteps.ca/videos/steps.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
+                  </div>
+                  <div className="link-space">
+                    <a href="https://www.casinosteps.ca" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
+                  </div>
                 </div>
-              }
-
-              {showSteps &&
-                <div className="link-space">
-                  <a onClick={handleShowSteps}><i className="fa-solid fa-minus"></i></a>
-                </div>
-              }
-
-              <div className="link-space">
-                <a href="https://www.casinosteps.ca/videos/steps.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
-              </div>
-
-              <div className="link-space">
-                <a href="https://www.casinosteps.ca" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
               </div>
             </li>
 
             {showSteps &&
               <div className="cursive">Steps! is an app tailored for students of Casino, the Cuban dance also known as Cuban salsa. It provides a resource for learners to view instructional videos of the dance steps taught in class and hear the pronunciation of each step's name. Administrators can upload new steps and manage access, ensuring students can only view content relevant to their current level. This app supports a structured learning experience while making dance instruction accessible and engaging.</div>}
 
-            <li className="li-line">
-
-              <li>Tips!</li>
-
-              {!showTips &&
-                <div className="link-space">
-                  <a onClick={handleShowTips}><i className="fa-projects fa-brands fa-plus"></i></a>
-                </div>
-              }
-
-              {showTips &&
-                <div className="link-space">
-                  <a onClick={handleShowTips}><i className="fa-solid fa-minus"></i></a>
-                </div>
-              }
-
-              <div className="link-space">
+<li className="li-line">
+              <div className="project-name-and-icons">
+                <li>Tips!</li>
+                <div className="icons">
+                  {!showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowTips}><i className="fa-projects fa-brands fa-plus"></i></a>
+                    </div>
+                  }
+                  {showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowTips}><i className="fa-solid fa-minus"></i></a>
+                    </div>
+                  }
+           <div className="link-space">
                 <a href="https://www.tips.manucasanova.com/tips.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
               </div>
 
               <div className="link-space">
                 <a href="https://www.tips.manucasanova.com/" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
               </div>
+                </div>
+              </div>
             </li>
 
             {showTips &&
               <div className="cursive">Tips! is a specialized calculator designed for restaurant managers and supervisors to streamline tip distribution among team members. The app calculates how tips should be shared based on various factors, including hours worked, different packages and menus, and roles (such as servers or server support). It simplifies the process of ensuring fair and accurate tip distribution, tailored to the specific needs of the restaurant.</div>}
 
-
-            <li className="li-line">
-
+<li className="li-line">
+              <div className="project-name-and-icons">
               <li>A PERN stack CRUD Application Tutorial</li>
-
-              {!showPern &&
-                <div className="link-space">
-                  <a onClick={handleShowPern}><i className="fa-projects fa-brands fa-plus"></i></a>
-                </div>
-              }
-
-              {showPern &&
-                <div className="link-space">
-                  <a onClick={handleShowPern}><i className="fa-solid fa-minus"></i></a>
-                </div>
-              }
-
-              <div className="link-space">
+                <div className="icons">
+                  {!showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowPern}><i className="fa-projects fa-brands fa-plus"></i></a>
+                    </div>
+                  }
+                  {showRwithme &&
+                    <div className="link-space">
+                      <a onClick={handleShowPern}><i className="fa-solid fa-minus"></i></a>
+                    </div>
+                  }
+            <div className="link-space">
                 <a href="https://www.manucasanova.com/videos/movies.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
               </div>
 
               <div className="link-space">
                 <a href="https://medium.com/@manuelcasanovafernandez/a-pern-stack-crud-application-tutorial-e8676582c708" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
+              </div>
+                </div>
               </div>
             </li>
 
@@ -163,11 +155,11 @@ export default function Developer() {
               <div className="cursive">This article is a tutorial to create a simple CRUD application with the PERN stack (PostgreSQL, Express, React, Node).</div>}
 
 
-            <li className="li-line">
-
+<li className="li-line">
+              <div className="project-name-and-icons">
               <li>Casanovaspanish</li>
-
-              {!showCasanova &&
+                <div className="icons">
+                {!showCasanova &&
                 <div className="link-space">
                   <a onClick={handleShowCasanova}><i className="fa-projects fa-brands fa-plus"></i></a>
                 </div>
@@ -178,58 +170,22 @@ export default function Developer() {
                   <a onClick={handleShowCasanova}><i className="fa-solid fa-minus"></i></a>
                 </div>
               }
-
-              <div className="link-space">
+          <div className="link-space">
                 <a href="https://www.casanovaspanish.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
               </div>
+                </div>
+              </div>
             </li>
-
 
             {showCasanova &&
               <div className="cursive">Website for an online Spanish tutor.</div>}
 
+
+
           </ul>
         </div>
+
       </div >
-
-
-      {/* <div className="hospitality-section">
-        <div className="hospitality-section-title">Experience and projects</div>
-        <div className="list">
-          <ul>
-
-
-            <div className="li-title">2022 - present</div>
-            <li>Full Stack Web Developer</li>
-
-
-            <div className="li-title">Projects</div>
-
-            <div className="project-line">
-
-              <div className="link-space">
-                RWITHME
-              </div>
-
-              <div className="link-space">
-                <a onClick={handleShowRWithMe}><i className="fa-projects fa-brands fa-plus"></i></a>
-              </div>
-
-              <div className="link-space">
-                <a href="https://www.rwithme.com/rwithme.mp4" rel="noreferrer" target="_blank"><i className="fa-projects fa-brands fa-youtube"></i></a>
-              </div>
-
-              <div className="link-space">
-                <a href="https://www.rwithme.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
-              </div>
-
-            </div>
-
-
-          </ul>
-        </div>
-
-      </div> */}
 
 
       < div className="hospitality-section" >
