@@ -24,6 +24,26 @@ export default function Home() {
         <img className="photo" src={image} alt='Manuel' />
       </div>
 
+      <div className="contact">
+
+
+<a href="mailto:manucasanova@hotmail.com"><i className="fa-solid fa-envelope" />
+  <a href="mailto:manucasanova@hotmail.com?subject=Hello Manuel!"></a>
+</a>
+
+
+<div className="resume">
+  <a title="resume" id="a-resume" href={resume} target="_blank" rel="noreferrer">
+    <i class="fa-solid fa-file-pdf"></i>
+    </a>
+</div>
+
+<a href="https://www.linkedin.com/in/manuel-casanova/" rel="noreferrer" target="_blank"><i className="fa-solid fa-brands fa-linkedin-in"></i></a>
+
+<a href="https://github.com/manuelcasanova/" rel="noreferrer" target="_blank"><i className="fa-solid fa-brands fa-github"></i></a>
+
+</div>
+
       <div className="blocks">
 
         <Link to="/developer" className='link no-line'>
@@ -32,57 +52,43 @@ export default function Home() {
           </div>
         </Link>
 
-{!showMore && 
-        <div className="link-space">
-          <a onClick={handleShowMore}><i className="fa-projects fa-brands fa-plus"></i></a>
-        </div>
-        }
-
-{showMore && 
-        <div className="link-space">
-          <a onClick={handleShowMore}><i className="fa-solid fa-minus"></i></a>
-        </div>
-        }
-
-        {showMore && 
- 
-          <div className='blocks-bottom'>
-
-            <Link to="/hospitality" className='link no-line'>
-              <div className="block">
-                ...in the Hospitality Industry
-              </div>
-            </Link>
-
-
-            <Link to="/spanish" className='link no-line'>
-              <div className="block">
-                ...as a Spanish Teacher
-              </div>
-            </Link>
-
+        {/* {!showMore &&
+          <div className="link-space">
+            <a onClick={handleShowMore}><i className="fa-projects fa-brands fa-plus"></i></a>
           </div>
-          
-}
+        }
 
-    </div >
+        {showMore &&
+          <div className="link-space">
+            <a onClick={handleShowMore}><i className="fa-solid fa-minus"></i></a>
+          </div>
+        } */}
+
+        {/* {showMore &&  */}
+
+        {/* <div className='blocks-bottom'> */}
+
+          <Link to="/hospitality" className='link no-line'>
+            <div className="block-shorter">
+              ...in the Hospitality Industry
+            </div>
+          </Link>
 
 
-      <div className="contact">
+          <Link to="/spanish" className='link no-line'>
+            <div className="block-shorter">
+              ...as a Spanish Teacher
+            </div>
+          </Link>
+
+        {/* </div> */}
+
+        {/* } */}
+
+      </div >
 
 
-        <a href="mailto:manucasanova@hotmail.com"><i className="fa-solid fa-envelope" />
-          <a href="mailto:manucasanova@hotmail.com?subject=Hello Manuel!"></a>
-        </a>
 
-
-        <div className="resume">
-          <a title="resume" id="a-resume" href={resume} target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i></a>
-        </div>
-
-        <a href="https://www.linkedin.com/in/manuel-casanova/" rel="noreferrer" target="_blank"><i className="fa-solid fa-brands fa-linkedin-in"></i></a>
-
-      </div>
     </>
   )
 }
