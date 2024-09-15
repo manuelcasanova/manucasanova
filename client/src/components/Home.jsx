@@ -81,6 +81,12 @@ export default function Home() {
             </div>
           </Link>
 
+          <Link to="/beyond" className='link no-line'>
+            <div className="block-shorter">
+              ...beyond the resume
+            </div>
+          </Link>
+
         {/* </div> */}
 
         {/* } */}
