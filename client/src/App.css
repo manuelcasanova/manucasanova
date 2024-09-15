@@ -25,6 +25,16 @@ body {
   padding: 1em 0em 1em 0em;
 }
 
+.beyond {
+  padding: 1em 0em 1em 0em;
+}
+
+.beyond-paragraph {
+  margin-bottom: 1em;
+  text-align: justify;
+  font-size: 15px;
+}
+
 .fa-plus {
   cursor: pointer;
 }
@@ -79,7 +89,7 @@ body {
 }
 
 .title {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 4em;
   font-weight: 500;
   font-family: 'Josefin Slab', serif;
@@ -92,7 +102,7 @@ body {
 }
 
 .photo {
-  margin: 3em;
+  margin: 1.5em 1em;
   max-width: 10em;
   text-align: center;
   border-radius: 100%;
@@ -214,6 +224,22 @@ min-width: 250px;
   opacity: 0.8;
 }
 
+.beyond-section {
+  background-color: var(--color3);
+  border-radius: 20px;
+  /* height: 5em; */
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: xx-large;
+  /* position: absolute; */
+  margin: 0.5em;
+  position: relative;
+  opacity: 0.8;
+}
+
 .hospitality-section:hover {
   opacity: 2;
   /* cursor: pointer; */
@@ -222,12 +248,21 @@ min-width: 250px;
 
 
 .hospitality-section-title {
+  /* position: absolute; */
+  top: 2px;
+  margin-top: 0.5em;
+  /* margin-bottom: 1em; */
+  color: var(--color1);
+}
+
+.beyond-section-title {
   position: absolute;
   top: 2px;
   margin-top: 0.5em;
   margin-bottom: 1em;
   color: var(--color1);
 }
+
 
 .list {
   margin-top: 2em;
@@ -274,7 +309,7 @@ list-style-type: none;
 
 .contact {
   /* margin: 10% 30% 10% 30%; */
-  margin: 1em auto;
+  margin: 0.5em auto;
   /* padding-bottom: 50px; */
   display: flex;
   justify-content: space-between;
@@ -314,7 +349,7 @@ list-style-type: none;
   }
 
   .list {
-    margin-top: 4em;
+    margin-top: 2em;
   }
 }
 

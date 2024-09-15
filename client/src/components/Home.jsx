@@ -12,7 +12,7 @@ export default function Home() {
 
 
   const navigate = useNavigate()
-  const resume = "https://www.manucasanova.com/resume2.pdf"
+  const resume = "https://www.manucasanova.com/resume.pdf"
 
   return (
     <>
@@ -83,7 +83,7 @@ export default function Home() {
 
           <Link to="/beyond" className='link no-line'>
             <div className="block-shorter">
-              ...beyond the resume
+              ...beyond the Resume
             </div>
           </Link>
 

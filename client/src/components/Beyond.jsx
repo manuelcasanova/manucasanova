@@ -4,10 +4,9 @@ export default function Beyond() {
   return (
     <div className="beyond">
       <div className="beyond-section">
-        <div className="hospitality-section-title">The human side</div>
+        <div className="beyond-section-title">The human side</div>
         <div className="list">
           <ul>
-            
             
               <div className="beyond-paragraph">I'm a Full Stack Web Developer (React | Express | Node | PSQL) looking to join a dynamic team where I can apply my skills to build impactful apps that drive business success and -hopefully!- improve people's lives. </div>
                 
