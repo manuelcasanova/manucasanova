@@ -3,11 +3,16 @@ import { useState } from "react"
 
 export default function Developer() {
 
+  const [showTemplate, setShowTemplate] = useState(false)
   const [showRwithme, setShowRwithme] = useState(false)
   const [showSteps, setShowSteps] = useState(false)
   const [showTips, setShowTips] = useState(false)
   const [showPern, setShowPern] = useState(false)
   const [showCasanova, setShowCasanova] = useState(false)
+
+  const handleShowTemplate = () => {
+    setShowTemplate(prev => !prev);
+  };
 
   const handleShowRWithMe = () => {
     setShowRwithme(prev => !prev);
@@ -43,6 +48,32 @@ export default function Developer() {
             <div className="li-title">2022 - present</div>
             <li>Full Stack Web Developer</li>
             <div className="li-title">Projects</div>
+
+            <li className="li-line">
+              <div className="project-name-and-icons">
+                <li>Fullstack Template</li>
+                <div className="icons">
+                  {!showTemplate &&
+                    <div className="link-space">
+                      <a onClick={handleShowTemplate}><i className="fa-projects fa-brands fa-plus"></i></a>
+                    </div>
+                  }
+                  {showTemplate &&
+                    <div className="link-space">
+                      <a onClick={handleShowTemplate}><i className="fa-solid fa-minus"></i></a>
+                    </div>
+                  }
+                  <div className="link-space">
+                    <a href="https://www.template.manucasanova.com" rel="noreferrer" target="_blank"><i className="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            {showTemplate &&
+              <div className="cursive">This template offers a strong foundation for full-stack web development, featuring secure login/logout functionality for user authentication, user management with PostgreSQL to handle data and roles, role-based access control to regulate permissions across the app, and a responsive layout with a navigation bar, ensuring a clean, mobile-friendly interface built with ReactJS.</div>}
+
+
 
             <li className="li-line">
               <div className="project-name-and-icons">
